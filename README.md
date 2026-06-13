@@ -6,15 +6,15 @@
 _✨ 正版与多种外置登录共存 ✨_
 
 [![GitHub license](https://img.shields.io/github/license/CaaMoe/MultiLogin?style=flat-square)](https://github.com/CaaMoe/MultiLogin/blob/master/LICENSE)
-[![QQ Group](https://img.shields.io/badge/QQ%20group-832210691-yellow?style=flat-square)](https://jq.qq.com/?_wv=1027&k=WrOTGIC7)
 [![Join our Discord](https://img.shields.io/discord/1225725211727499347.svg?logo=discord&label=)](https://discord.gg/9vh4kZRFCj)
 [![bStats](https://img.shields.io/bstats/servers/21890?color=brightgreen&label=bStats&logo=bs&style=flat-square)](https://bstats.org/plugin/velocity/MultiLogin/21890)
 
 </div>
 
-> [!CAUTION]
-> 🚧 本项目已停止维护, 因维护与问题修复成本过高, 不再建议继续使用.  
-> 可加入QQ交流群了解详细内幕和获取同类型需求的解决方案.
+> [!CAUTION]  
+> 这是一个非官方fork，尝试更新MultiLogin并使其在最新版Velocity上工作  
+> 只针对Voidix Network使用的Velocity版本进行适配，但尽力保持通用性    
+> 使用风险自负！
 
 ## 概述
 
