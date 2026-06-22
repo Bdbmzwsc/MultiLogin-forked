@@ -41,15 +41,8 @@ jobs:
             echo "release=false" >> $GITHUB_ENV;
           fi
 
-      - name: Build Dev
-        if: env.release == 'false'
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: current
-          arguments: ShadowJar
 
       - name: Build Release
-        if: env.release == 'true'
         uses: gradle/gradle-build-action@v2
         with:
           gradle-version: current
@@ -59,15 +52,8 @@ jobs:
         run: |
           rm -f ~/.gradle/caches/modules-2/modules-2.lock
           rm -f ~/.gradle/caches/modules-2/gc.properties
-
-      - name: Publish Release
-        if: env.release == 'true'
-        uses: marvinpinto/action-automatic-releases@latest
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "v${{ env.version }}"
-          draft: false
-          prerelease: false
-          title: "MultiLogin v${{ env.version }}"
-          files: |
-            velocity/build/libs/MultiLogin-Velocity-${{ env.version }}.jar
+          name: carpet-sgu-addition
+          path: velocity/build/libs/*.jar
